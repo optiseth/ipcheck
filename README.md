@@ -5,4 +5,4 @@ Downloads web page from http://ipchicken.com, parses the info for the IP address
 
 This script requires python3 and BeautifulSoup.
 
-You'll need to change 3 variables in the compareIPs function to match your credentials.
+You'll need to change 3 variables in the sendIP function to match your credentials.
