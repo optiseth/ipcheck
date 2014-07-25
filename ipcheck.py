@@ -16,7 +16,7 @@ class IPCheck:
         self.logDirectoryCheck()
         self.checkIPFile()
         self.getCurrentIP()
-        self.compareIPs()
+        self.sendIP()
 
     def logDirectoryCheck(self):
         if os.path.isfile(self.logFile):
@@ -46,7 +46,7 @@ class IPCheck:
         except:
             sys.exit
 
-    def compareIPs(self):
+    def sendIP(self):
         if self.oldIP == (self.currentIP + '\n'):
             sys.exit
         else:
