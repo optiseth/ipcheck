@@ -38,11 +38,11 @@ class IPCheck:
 
     def getCurrentIP(self):
         try:
-            response = urllib.request.urlopen('http://ipchicken.com')
+            response = urllib.request.urlopen('https://ipinfo.io/ip')
             html = response.read()
-            soup = BeautifulSoup(html)
-            ip = soup.b.prettify().split('\n')
-            self.currentIP = ip[1].strip()
+            #soup = BeautifulSoup(html)
+            #ip = soup.b.prettify().split('\n')
+            self.currentIP = html.decode('utf-8')
         except:
             sys.exit
 
