@@ -54,7 +54,7 @@ class IPCheck:
             sender = '< enter sending email here >'
             userpass = '< enter sending password here >'
             
-            message = 'To: ' + receiver + '\n' + 'From: ' + sender + '\n' + 'Subject: New IP Address\n\n' + self.currentIP
+            message = 'To: ' + receiver + '\n' + 'From: ' + receiver + '\n' + 'Subject: New IP Address\n\n' + self.currentIP
 
             try:
                 smtpObj = smtplib.SMTP('smtp.gmail.com', 587)
